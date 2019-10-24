@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.23",
   "id" : "processChargeabck",
   "name" : "processChargeabck",
-  "lastUpdate" : 1571660062919,
+  "lastUpdate" : 1571910866583,
   "rows" : [
     [
       {
@@ -212,7 +212,7 @@
                   },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
-                    "value" : ".."
+                    "value" : "../case?id={{caseId}}"
                   },
                   "collectionPosition" : {
                     "type" : "constant"
@@ -396,6 +396,13 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "caseId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "caseId"
       ],
       "exposed" : false
     }

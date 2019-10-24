@@ -220,10 +220,16 @@
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswAepmEemwmtvAMLaNWg" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswAupmEemwmtvAMLaNWg" id="CONNECTOR"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswA-pmEemwmtvAMLaNWg" id="DATA_TYPES"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswBOpmEemwmtvAMLaNWg" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswBOpmEemwmtvAMLaNWg" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_TyzlQPY2EemOs6WJfIfIrw" key="ActivityState.groovy" value="ActivityState.groovy" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_Ty_ygPY2EemOs6WJfIfIrw" key="NameGenerator.groovy" value="NameGenerator.groovy" type="GROOVY_SCRIPT"/>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswBepmEemwmtvAMLaNWg" id="OTHER"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswBupmEemwmtvAMLaNWg" id="DATA_TYPES"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswB-pmEemwmtvAMLaNWg" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswB-pmEemwmtvAMLaNWg" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_Ty_ygfY2EemOs6WJfIfIrw" key="ActivityState.groovy" value="ActivityState.groovy" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_Ty_ygvY2EemOs6WJfIfIrw" key="NameGenerator.groovy" value="NameGenerator.groovy" type="GROOVY_SCRIPT"/>
+        </applicationDependencies>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WXswCOpmEemwmtvAMLaNWg" id="OTHER"/>
       </configurations>
       <configurations xmi:type="configuration:Configuration" xmi:id="_ZU0BYOpmEemwmtvAMLaNWg" name="Dev" version="7.10.0-001" username="walter.bates" password="bpm">

@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.20",
   "id" : "executeManualTask",
   "name" : "executeManualTask",
-  "lastUpdate" : 1571067836757,
+  "lastUpdate" : 1571911029531,
   "rows" : [
     [
       {
@@ -220,7 +220,7 @@
           },
           "targetUrlOnSuccess" : {
             "type" : "interpolation",
-            "value" : ".."
+            "value" : "../case?id={{caseId}}"
           },
           "collectionToModify" : {
             "type" : "variable"
@@ -286,6 +286,13 @@
       "type" : "expression",
       "value" : [
         "return { \"taskId\" : $data.taskId, \"content\": $data.comment } ;"
+      ],
+      "exposed" : false
+    },
+    "caseId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "caseId"
       ],
       "exposed" : false
     }

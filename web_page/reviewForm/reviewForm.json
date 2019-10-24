@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.20",
   "id" : "reviewForm",
   "name" : "reviewForm",
-  "lastUpdate" : 1571067946782,
+  "lastUpdate" : 1571910892862,
   "rows" : [
     [
       {
@@ -719,7 +719,7 @@
                   },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
-                    "value" : ".."
+                    "value" : "../case?id={{caseId}}"
                   },
                   "collectionPosition" : {
                     "type" : "constant"
@@ -931,6 +931,13 @@
         "        \"value\" : false",
         "    }",
         "]"
+      ],
+      "exposed" : false
+    },
+    "caseId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "caseId"
       ],
       "exposed" : false
     }
