@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletResponse
 
 import org.bonitasoft.engine.bpm.flownode.ActivityInstance
 import org.bonitasoft.engine.bpm.flownode.ActivityInstanceCriterion
+import org.bonitasoft.engine.bpm.flownode.ArchivedHumanTaskInstance
 import org.bonitasoft.engine.bpm.flownode.ArchivedHumanTaskInstanceSearchDescriptor
 import org.bonitasoft.engine.bpm.flownode.HumanTaskInstance
 import org.bonitasoft.engine.bpm.flownode.HumanTaskInstanceSearchDescriptor
@@ -60,6 +61,29 @@ class CaseActivity implements RestApiController, CaseActivityHelper, BPMNameCons
         }
 
         result = result.sort{ a1,a2 -> valueOfState(a1.acmState) <=> valueOfState(a2.acmState) }
+
+        //Append archived tasks
+        def identityAPI = context.apiClient.getIdentityAPI()
+        result.addAll(processAPI.searchArchivedHumanTasks(new SearchOptionsBuilder(0, Integer.MAX_VALUE).with {
+            filter(ArchivedHumanTaskInstanceSearchDescriptor.PARENT_PROCESS_INSTANCE_ID, caseId)
+            HIDDEN_ACTIVITIES.each {
+                differentFrom(ArchivedHumanTaskInstanceSearchDescriptor.NAME, it)
+            }
+            done()
+        }).result
+        .findAll{
+            //remove finished loop task instances
+            it.parentActivityInstanceId == 0 || !isAnArchivedLoopInstance(it, processAPI)
+        }
+        .collect{ ArchivedHumanTaskInstance task ->
+            def user = identityAPI.getUser(task.executedBy)
+            [
+                name:task.displayName ?: task.name,
+                description:task.description ?: '',
+                bpmState:task.state.capitalize(),
+                executedBy:"$user.firstName $user.lastName"
+            ]
+        })
 
         buildResponse(responseBuilder, HttpServletResponse.SC_OK, new JsonBuilder([
             activities: result,

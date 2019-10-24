@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.10.17",
   "id" : "case",
   "name" : "case",
-  "lastUpdate" : 1571659482699,
+  "lastUpdate" : 1571912402099,
   "rows" : [
     [
       {
@@ -699,7 +699,7 @@
       "value" : [
         "return [",
         "'name',",
-        "'acmState |labelized',",
+        "'acmState ? acmState : bpmState | labelized',",
         "function(input) {",
         "    return input.row.url ? `<a href=\\\"${input.row.url}\\\" target=\\\"${input.row.target}\\\" >Execute</a>` : ``;",
         "}",
