@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process">
+  <process:MainProcess xmi:id="_LGFL0Pu_Eemm57U16_J_8w" name="Credit card dispute resolution" author="adrien" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED000574003043726564697420636172642064697370757465207265736F6C7574696F6E372E31302E302D303031372E31302E307370">
+    <elements xmi:type="process:Pool" xmi:id="_LGFL0fu_Eemm57U16_J_8w" name="CreditCardDisputeResolution">
+      <elements xmi:type="process:Lane" xmi:id="_LGFL0vu_Eemm57U16_J_8w" name="Investigation lane" actor="_LGFL6_u_Eemm57U16_J_8w"/>
+      <elements xmi:type="process:Lane" xmi:id="_OXqRUPu_Eemm57U16_J_8w" name="Validation lane" actor="_Xs-a4Pu_Eemm57U16_J_8w"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_LGFL5Pu_Eemm57U16_J_8w">
+        <targetForm xmi:type="expression:Expression" xmi:id="_LGFL5fu_Eemm57U16_J_8w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      </formMapping>
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_LGFL5vu_Eemm57U16_J_8w">
+        <targetForm xmi:type="expression:Expression" xmi:id="_LGFL5_u_Eemm57U16_J_8w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      </overviewFormMapping>
+      <actors xmi:type="process:Actor" xmi:id="_LGFL6_u_Eemm57U16_J_8w" name="Investigator" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_Xs-a4Pu_Eemm57U16_J_8w" name="Validator"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_b1o5YPu_Eemm57U16_J_8w" name="Dev" version="7.10.0-001" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_b1o5afu_Eemm57U16_J_8w">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_b1o5avu_Eemm57U16_J_8w" name="Investigator">
+            <groups xmi:type="actormapping:Groups" xmi:id="_b1o5a_u_Eemm57U16_J_8w"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_b1o5bPu_Eemm57U16_J_8w"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_b1o5bfu_Eemm57U16_J_8w"/>
+            <users xmi:type="actormapping:Users" xmi:id="_b1o5bvu_Eemm57U16_J_8w">
+              <user>walter.bates</user>
+            </users>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_b1o5b_u_Eemm57U16_J_8w" name="Validator">
+            <groups xmi:type="actormapping:Groups" xmi:id="_b1o5cPu_Eemm57U16_J_8w"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_b1o5cfu_Eemm57U16_J_8w"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_b1o5cvu_Eemm57U16_J_8w"/>
+            <users xmi:type="actormapping:Users" xmi:id="_b1o5c_u_Eemm57U16_J_8w">
+              <user>william.jobs</user>
+            </users>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Yfu_Eemm57U16_J_8w" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Yvu_Eemm57U16_J_8w" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Y_u_Eemm57U16_J_8w" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5ZPu_Eemm57U16_J_8w" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgcPu_Eemm57U16_J_8w" key="ActivityState.groovy" value="ActivityState.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgcfu_Eemm57U16_J_8w" key="NameGenerator.groovy" value="NameGenerator.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Zfu_Eemm57U16_J_8w" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Zvu_Eemm57U16_J_8w" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Z_u_Eemm57U16_J_8w" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgcvu_Eemm57U16_J_8w" key="ActivityState.groovy" value="ActivityState.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgc_u_Eemm57U16_J_8w" key="NameGenerator.groovy" value="NameGenerator.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </applicationDependencies>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5aPu_Eemm57U16_J_8w" id="OTHER"/>
+      </configurations>
+      <contract xmi:type="process:Contract" xmi:id="_LGFL7Pu_Eemm57U16_J_8w"/>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_LGFL7fu_Eemm57U16_J_8w">
+        <name xmi:type="expression:Expression" xmi:id="_LGFL7vu_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_LGFL7_u_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_LGFL8Pu_Eemm57U16_J_8w">
+        <name xmi:type="expression:Expression" xmi:id="_LGFL8fu_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_LGFL8vu_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_LGFL8_u_Eemm57U16_J_8w">
+        <name xmi:type="expression:Expression" xmi:id="_LGFL9Pu_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_LGFL9fu_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_LGFL9vu_Eemm57U16_J_8w">
+        <name xmi:type="expression:Expression" xmi:id="_LGFL9_u_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_LGFL-Pu_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_LGFL-fu_Eemm57U16_J_8w">
+        <name xmi:type="expression:Expression" xmi:id="_LGFL-vu_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_LGFL-_u_Eemm57U16_J_8w" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+    </elements>
+    <datatypes xmi:type="process:BooleanType" xmi:id="_LGFL_Pu_Eemm57U16_J_8w" name="Boolean"/>
+    <datatypes xmi:type="process:DateType" xmi:id="_LGFL_fu_Eemm57U16_J_8w" name="Date"/>
+    <datatypes xmi:type="process:IntegerType" xmi:id="_LGFL_vu_Eemm57U16_J_8w" name="Integer"/>
+    <datatypes xmi:type="process:LongType" xmi:id="_LGFL__u_Eemm57U16_J_8w" name="Long"/>
+    <datatypes xmi:type="process:DoubleType" xmi:id="_LGFMAPu_Eemm57U16_J_8w" name="Double"/>
+    <datatypes xmi:type="process:StringType" xmi:id="_LGFMAfu_Eemm57U16_J_8w" name="Text"/>
+    <datatypes xmi:type="process:JavaType" xmi:id="_LGFMAvu_Eemm57U16_J_8w" name="Java_object"/>
+    <datatypes xmi:type="process:XMLType" xmi:id="_LGFMA_u_Eemm57U16_J_8w" name="XML"/>
+    <datatypes xmi:type="process:BusinessObjectType" xmi:id="_LGFMBPu_Eemm57U16_J_8w" name="Business_Object"/>
+  </process:MainProcess>
+  <notation:Diagram xmi:id="_LGFMBfu_Eemm57U16_J_8w" type="Process" element="_LGFL0Pu_Eemm57U16_J_8w" name="MyDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_LGFMBvu_Eemm57U16_J_8w" type="2007" element="_LGFL0fu_Eemm57U16_J_8w">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LGFMB_u_Eemm57U16_J_8w" type="5008"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LGFMCPu_Eemm57U16_J_8w" type="7001">
+        <children xmi:type="notation:Node" xmi:id="_LGFMCfu_Eemm57U16_J_8w" type="3007" element="_LGFL0vu_Eemm57U16_J_8w">
+          <children xmi:type="notation:DecorationNode" xmi:id="_LGFMCvu_Eemm57U16_J_8w" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_LGFMC_u_Eemm57U16_J_8w" type="7002"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_LGFME_u_Eemm57U16_J_8w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_LGFMFPu_Eemm57U16_J_8w" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_LGFMFfu_Eemm57U16_J_8w"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_LGFMFvu_Eemm57U16_J_8w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LGFMF_u_Eemm57U16_J_8w"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_OX13gPu_Eemm57U16_J_8w" type="3007" element="_OXqRUPu_Eemm57U16_J_8w">
+          <children xmi:type="notation:DecorationNode" xmi:id="_OX2ekPu_Eemm57U16_J_8w" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_OX2ekfu_Eemm57U16_J_8w" type="7002"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_OX13gfu_Eemm57U16_J_8w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_OX13gvu_Eemm57U16_J_8w" fontName=".AppleSystemUIFont"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_OX13g_u_Eemm57U16_J_8w"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_OX2ekvu_Eemm57U16_J_8w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OX13hPu_Eemm57U16_J_8w" x="121" y="178"/>
+        </children>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_LGFMGPu_Eemm57U16_J_8w"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_LGFMGfu_Eemm57U16_J_8w" fontName=".AppleSystemUIFont"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_LGFMGvu_Eemm57U16_J_8w"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_LGFMG_u_Eemm57U16_J_8w"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LGFy4Pu_Eemm57U16_J_8w" width="1320" height="250"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_LGFy4fu_Eemm57U16_J_8w"/>
+  </notation:Diagram>
+</xmi:XMI>
