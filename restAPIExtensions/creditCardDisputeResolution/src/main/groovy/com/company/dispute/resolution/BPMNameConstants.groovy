@@ -12,7 +12,7 @@ interface BPMNameConstants {
         CREATE_ACTIVITY,
         CLOSE_ACTIVITY
     ]
-    def static final ACTIVITY_STATE_DATA_NAME = '$activityState'
+    def static final ACTIVITY_STATE_DATA_NAME = '$acmState'
 
     def static final REQUIRED_STATE = 'Required'
     def static final OPTIONAL_STATE = 'Optional'
