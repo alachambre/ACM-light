@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.10.17",
   "id" : "case",
   "name" : "case",
-  "lastUpdate" : 1571912402099,
+  "lastUpdate" : 1573122862966,
   "rows" : [
     [
       {
@@ -313,7 +313,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Customer: {{dispute.customer}}<br/>\nDescription: {{dispute.description}}<br/>\nAmount: {{dispute.amount}}<br/>\nTransaction date: {{dispute.transactionDate|uiDate}}"
+                  "value" : "Customer: {{dispute.customer}}<br/>\nDescription: {{dispute.description}}<br/>\nAmount: {{dispute.amount}} €<br/>\nTransaction date: {{dispute.transactionDate|uiDate}}"
                 },
                 "alignment" : {
                   "type" : "constant",
