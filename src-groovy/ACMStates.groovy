@@ -1,4 +1,4 @@
-public class ActivityState {
+public class ACMStates {
 	
 	public static String REQUIRED = "Required"
 	public static String DISCRETIONARY = "Discretionary"
