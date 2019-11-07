@@ -36,13 +36,13 @@
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Y_u_Eemm57U16_J_8w" id="DATA_TYPES"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5ZPu_Eemm57U16_J_8w" id="GROOVY_SCRIPT">
           <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgcPu_Eemm57U16_J_8w" key="ActivityState.groovy" value="ActivityState.groovy" type="GROOVY_SCRIPT"/>
-          <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgcfu_Eemm57U16_J_8w" key="NameGenerator.groovy" value="NameGenerator.groovy" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_K8Cz4AFCEeqeDsGkGP61Xw" key="Generator.groovy" value="Generator.groovy" type="GROOVY_SCRIPT"/>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Zfu_Eemm57U16_J_8w" id="OTHER"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Zvu_Eemm57U16_J_8w" id="DATA_TYPES"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5Z_u_Eemm57U16_J_8w" id="GROOVY_SCRIPT">
           <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgcvu_Eemm57U16_J_8w" key="ActivityState.groovy" value="ActivityState.groovy" exported="false" type="GROOVY_SCRIPT"/>
-          <fragments xmi:type="configuration:Fragment" xmi:id="_b1pgc_u_Eemm57U16_J_8w" key="NameGenerator.groovy" value="NameGenerator.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_K8W88AFCEeqeDsGkGP61Xw" key="Generator.groovy" value="Generator.groovy" exported="false" type="GROOVY_SCRIPT"/>
         </applicationDependencies>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_b1o5aPu_Eemm57U16_J_8w" id="OTHER"/>
       </configurations>
